@@ -14,5 +14,10 @@ Examples of various types of UML diagrams created using yEd graph editor.
   :maxdepth: 1
   :caption: Diagrams
 
+  Common <common>
   Activity Diagram <activity-diagram>
   Class Diagram <class-diagram>
+
+.. note::
+  Id of type ``[14.3.3.1 StateMachineExtension]`` refers to
+  `UML 2.5 standard <http://www.omg.org/spec/UML/2.5/>`_.
