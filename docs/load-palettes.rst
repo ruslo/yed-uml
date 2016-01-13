@@ -28,7 +28,7 @@ Click ``Import Section``:
 .. image:: manage-palette/import-section.png
   :align: center
 
-Find ``palette`` directory and load file:
+Find ``palettes`` directory and load file:
 
 .. image:: manage-palette/open.png
   :align: center
