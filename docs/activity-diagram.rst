@@ -4,13 +4,15 @@ Activity Diagram
 Actions
 -------
 
-``[15.2.4 Notation]``::
+.. admonition:: 15.2.4 Notation
+  :class: tip
 
   The notations for ActivityNodes are illustrated below. This notation is
   discussed in more detail in the following sub clauses (and in Clause 16 for
   Actions).
 
-``[16.2.4.1 Actions]``::
+.. admonition:: 16.2.4.1 Actions
+  :class: tip
 
   Actions are notated as round-cornered rectangles, as shown in Figure 16.2.
   The name of the action or other description of it may appear in the symbol.
@@ -21,7 +23,8 @@ Actions
 Activity Edge
 -------------
 
-``[15.2.4 Notation]``::
+.. admonition:: 15.2.4 Notation
+  :class: tip
 
   An ActivityEdge (whether a ControlFlow or ObjectFlow) is notated by an open
   arrowhead line connecting two ActivityNodes. If the edge has a name, it is
@@ -43,12 +46,14 @@ Activity Edge
 Decision Nodes
 --------------
 
-``[15.3.4.3 Merge Nodes and Decision Nodes]``::
+.. admonition:: 15.3.4.3 Merge Nodes and Decision Nodes
+  :class: tip
 
   The notation for both MergeNodes and DecisionNodes is a diamond-shaped
   symbol
 
-``[15.3.4.3 Merge Nodes and Decision Nodes]``::
+.. admonition:: 15.3.4.3 Merge Nodes and Decision Nodes
+  :class: tip
 
   A decisionInput on a DecisionNode is notated in a note symbol attached to
   the DecisionNode symbol, with the keyword «decisionInput», as shown in
@@ -66,7 +71,8 @@ Decision Nodes
 Initial Node
 ------------
 
-``[15.3.4.1 Initial and Final Nodes]``::
+.. admonition:: 15.3.4.1 Initial and Final Nodes
+  :class: tip
 
   InitialNodes are notated as a solid circle
 
@@ -76,7 +82,8 @@ Initial Node
 Final Nodes
 -----------
 
-``[15.3.4.1 Initial and Final Nodes]``::
+.. admonition:: 15.3.4.1 Initial and Final Nodes
+  :class: tip
 
   ActivityFinalNodes are notated as a solid circle within a hollow circle, as
   shown in Figure 15.28. This can be thought of as a goal notated as
@@ -93,7 +100,8 @@ Final Nodes
 Object Nodes
 ------------
 
-``[15.4.4.1 Object Nodes]``::
+.. admonition:: 15.4.4.1 Object Nodes
+  :class: tip
 
   ObjectNodes are notated as rectangles
 
