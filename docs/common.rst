@@ -1,7 +1,8 @@
 Comment (note symbol)
 ---------------------
 
-``[7.2.4 Notation]``::
+.. admonition:: 7.2.4 Notation
+  :class: tip
 
     A Comment is shown as a rectangle with the upper right corner bent (this is
     also known as a “note symbol”). The rectangle contains the body of the
