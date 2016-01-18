@@ -178,3 +178,110 @@ Realization
 
 .. image:: class-diagram/realization.png
   :align: center
+
+Composition
+-----------
+
+.. admonition:: 11.5.4 Notation
+  :class: tip
+
+  Any Association may be drawn as a diamond (larger than a terminator on a
+  line) with a solid line for each Association memberEnd connecting the diamond
+  to the Classifier that is the end’s type.
+
+.. admonition:: 11.5.4 Notation
+  :class: tip
+
+  An Association end is the connection between the line depicting an
+  Association and the icon (often a box) depicting the connected Classifier. A
+  name string may be placed near the end of the line to show the name of the
+  Association end.
+
+.. admonition:: 11.5.4 Notation
+  :class: tip
+
+  A binary Association may have one end with aggregation =
+  AggregationKind::shared or aggregation = AggregationKind::composite. When one
+  end has aggregation = AggregationKind::shared a hollow diamond is added as a
+  terminal adornment at the end of the Association line opposite the end marked
+  with aggregation = AggregationKind::shared. The diamond shall be noticeably
+  smaller than the diamond notation for Associations. An Association with
+  aggregation = AggregationKind::composite likewise has a diamond at the
+  corresponding end, but differs in having the diamond filled in.
+
+.. admonition:: 9.5.3 Semantics
+  :class: tip
+
+  Indicates that the Property is aggregated compositely, i.e., the composite
+  object has responsibility for the existence and storage of the composed
+  objects
+
+.. admonition:: 9.5.3 Semantics
+  :class: tip
+
+  Composite aggregation is a strong form of aggregation that requires a part
+  object be included in at most one composite object at a time. If a composite
+  object is deleted, all of its part instances that are objects are deleted
+  with it.
+
+.. admonition:: 11.5.3.1 Associations
+  :class: tip
+
+  The multiplicities at the other ends of the association determine the number
+  of instances in each partition. So, for example, 0..1 means there is at most
+  one instance per qualifier value.
+
+.. admonition:: 11.5.4 Notation
+  :class: tip
+
+  An Association end is the connection between the line depicting an
+  Association and the icon (often a box) depicting the connected Classifier. A
+  name string may be placed near the end of the line to show the name of the
+  Association end.  The name is optional and suppressible.
+
+.. code-block:: cpp
+
+  class A { /* ... */ };
+
+  class B {
+   public:
+    int x;
+    bool y;
+
+    A a[4];
+  };
+
+.. image:: class-diagram/composition.png
+  :align: center
+
+.. seealso::
+
+  `UML Association Reference <http://www.uml-diagrams.org/association-reference.html>`_
+
+Aggregation
+-----------
+
+.. code-block:: cpp
+
+  class B;
+
+  class A {
+   public:
+    A(B& b): b_(b) {}
+
+   private:
+    B& b_;
+  };
+
+  class B {
+   public:
+    void add(A& a) {
+      a_.push_back(&a);
+    }
+
+   private:
+    std::vector<A*> a_;
+  };
+
+.. image:: class-diagram/aggregation.png
+  :align: center
