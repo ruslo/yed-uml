@@ -155,6 +155,26 @@ Usage
 .. image:: class-diagram/usage.png
   :align: center
 
+Factory
+-------
+
+.. code-block:: cpp
+
+  class Foo { /* ... */ };
+
+  class Boo {
+   public:
+    Foo* make_foo() {
+      return new Foo();
+    }
+  };
+
+.. image:: class-diagram/factory.png
+  :align: center
+
+.. seealso::
+  `Abstract Factory Design Pattern <http://www.uml-diagrams.org/design-pattern-abstract-factory-uml-class-diagram-example.html>`_
+
 Realization
 -----------
 
