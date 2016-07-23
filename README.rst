@@ -14,6 +14,6 @@ Examples of various types of UML diagrams created using yEd graph editor.
   :alt: LICENSE
 
 * Sources: `<https://github.com/ruslo/yed-uml>`_
-* Documentation: `<http://yed-uml.readthedocs.org>`_
+* Documentation: `<http://yed-uml.readthedocs.io>`_
 * Reporting broken links, issues, general discussion: `<https://github.com/ruslo/yed-uml/issues/new>`_
 * Contacts: Ruslan Baratov <ruslan_baratov@yahoo.com>
